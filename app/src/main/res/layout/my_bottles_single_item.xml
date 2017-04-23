@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/my_bottles_single_item_wine_picture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="0"
+            android:contentDescription="@null"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/my_bottles_single_item_winery_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/highlight_text_size"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/my_bottles_single_item_repurchase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rectangle_button_green_brighter"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/my_bottles_activity_repurchase_button_text"
+                    android:drawableLeft="@drawable/ic_local_grocery_store_white_24px"
+                    android:drawableStart="@drawable/ic_local_grocery_store_white_24px"
+                    android:textColor="@color/color_white"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/my_bottles_single_item_wine_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/my_bottles_single_item_national_flag"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:id="@+id/my_bottles_single_item_wine_region"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0">
+
+            <TextView
+                android:id="@+id/my_bottles_single_item_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:text="@string/wishlist_item_delete_btn"
+                android:textAllCaps="false"
+                android:textColor="@color/drawable_light"
+                android:textSize="22sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_bottles_single_item_open_time_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/my_bottles_single_item_open_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/my_bottles_single_item_open_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/my_bottles_single_item_open_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="end"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_bottles_single_item_my_rate_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginStart="25dp"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/my_bottles_single_item_my_rate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/my_bottles_single_item_my_rate"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+        <RatingBar
+            android:id="@+id/my_bottles_single_item_my_rate_stars"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/rating_bar_background"
+            android:isIndicator="true"
+            android:progressTint="@color/rating_bar_progress"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:transformPivotX="0dp"
+            android:transformPivotY="5dp"/>
+
+        <TextView
+            android:id="@+id/my_bottles_single_item_my_rate_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <!-- Used to pad the bottom if open time section and rating section are both missing.
+         Its all because the idiot rating bar, we can't add more top margin to the divider. -->
+    <View
+        android:id="@+id/my_bottles_single_item_bottom_padding_section"
+        android:layout_width="match_parent"
+        android:layout_height="13dp"/>
+
+    <View
+        android:id="@+id/my_bottles_single_item_horizontal_divider_2"
+        style="@style/Horizontal_Divider_Thin_Light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_gray_light"/>
+
+</LinearLayout>

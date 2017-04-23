@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:id="@+id/winery_info_scroll_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.tagtalk.winemate.WineInfoActivity"
+    tools:showIn="@layout/activity_winery_info"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@+id/content_winery_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/winery_info_winery_pics"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="280dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/winery_info_winery_pics_view_pager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:layout_above="@+id/winery_info_tab_dots"/>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/winery_info_tab_dots"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"/>
+        </RelativeLayout>
+
+        <view
+            android:id="@+id/winery_info_contents_recycler_view"
+            class="android.support.v7.widget.RecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/winery_info_winery_pics"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/winery_info_wine_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/winery_info_contents_recycler_view"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/winery_info_our_wines"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/winery_info_activity_our_wines"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/large_text_size"
+                    android:textStyle="bold"
+                    tools:text="Our Wines"/>
+
+                <view
+                    android:id="@+id/winery_info_wine_list_recycler_view"
+                    class="android.support.v7.widget.RecyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/winery_info_our_wines"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+

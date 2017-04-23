@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/content_user_profile"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.tagtalk.winemate.UserProfileActivity"
+    tools:showIn="@layout/activity_user_profile">
+
+    <RelativeLayout
+        android:id="@+id/user_profile_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_page_banner_height">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_profile_background"/>
+
+        <TextView
+            android:id="@+id/user_profile_upload_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/user_profile_user_icon"
+            android:layout_alignBottom="@+id/user_profile_user_icon"
+            android:background="@android:color/transparent"
+            android:text="@string/user_profile_upload_photo"
+            android:textAllCaps="false"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/large_text_size"/>
+
+        <ImageView
+            android:id="@+id/user_profile_user_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/user_profile_user_name"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/user_profile_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/user_profile_buttons_layout"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/large_text_size"
+            tools:text="zhaoyuzhang"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/user_profile_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/user_profile_user_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/user_profile_user_name"
+            android:text="@string/user_profile_edit"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/title_text_size"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/user_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_profile_user_name"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/small_text_size"
+            tools:text="Name: Zhaoyu Zhang"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/user_profile_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_profile_name"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/small_text_size"
+            tools:text="Email: zhangzhaoyu1985@gmail.com"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/user_profile_user_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_profile_user_email"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/small_text_size"
+            tools:text="Gender: male"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/user_profile_user_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_profile_user_gender"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/small_text_size"
+            tools:text="Date of Birth: 11-11-1985"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/user_profile_reward_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_profile_user_dob"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/small_text_size"
+            tools:text="Reward Points: 30"/>
+
+        <Button
+            android:id="@+id/user_profile_follow"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/user_profile_buttons_layout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignBottom="@+id/user_profile_user_name"
+            android:background="@drawable/rectangle_button_green_brighter"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:text="Follow"/>
+
+        <LinearLayout
+            android:id="@+id/user_profile_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent_white"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/user_profile_followers_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/user_profile_followers_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/large_text_size"
+                    tools:text="52"/>
+
+                <TextView
+                    android:id="@+id/user_profile_followers_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_profile_followers_number"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/user_profile_follower_text"
+                    android:textSize="@dimen/small_text_size"/>
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/Vertical_Divider_Thin"
+                android:layout_height="55dp"/>
+
+            <RelativeLayout
+                android:id="@+id/user_profile_following_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/user_profile_following_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/large_text_size"
+                    tools:text="132"/>
+
+                <TextView
+                    android:id="@+id/user_profile_following_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_profile_following_number"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/user_profile_following_text"
+                    android:textSize="@dimen/small_text_size"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/Vertical_Divider_Thin"
+                android:layout_height="55dp"/>
+
+            <RelativeLayout
+                android:id="@+id/user_profile_wishlist_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/user_profile_wishlist_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/large_text_size"
+                    tools:text="12"/>
+
+                <TextView
+                    android:id="@+id/user_profile_wishlist_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_profile_wishlist_number"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/user_profile_wishlist_text"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_profile_private_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_user_info"
+        android:visibility="invisible">
+
+        <view
+            android:id="@+id/user_profile_recycler_view_follower_list"
+            class="android.support.v7.widget.RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+        <view
+            android:id="@+id/user_profile_recycler_view_following_list"
+            class="android.support.v7.widget.RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+        <view
+            android:id="@+id/user_profile_recycler_view_wishlist"
+            class="android.support.v7.widget.RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

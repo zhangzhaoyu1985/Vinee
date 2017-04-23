@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.tagtalk.winemate.QRScannerActivity"
+    tools:showIn="@layout/activity_qrscanner"
+    android:orientation="vertical">
+
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:id="@+id/qrscanner_scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <!--
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/qrscanner_activity_hint"
+            android:textColor="@color/text_white"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_margin="10dp"/>
+        -->
+        <TextView
+            android:id="@+id/qrscanner_check_steps_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/qrscanner_activity_check_steps_btn_text"
+            android:textColor="@color/text_green"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="40dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="title_text_size">22sp</dimen>
+    <dimen name="large_text_size">20sp</dimen>
+    <dimen name="highlight_text_size">16sp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="micro_text_size">10sp</dimen>
+
+    <!-- Authentication page -->
+    <dimen name="authentication_headline_block_padding">6dp</dimen>
+    <dimen name="authentication_headline_logo_dimen">26dp</dimen>
+    <dimen name="authentication_banner_height">100dp</dimen>
+    <dimen name="authentication_text_size_large">16sp</dimen>
+    <dimen name="authentication_text_size_larger">14sp</dimen>
+    <dimen name="authentication_text_size_base">12sp</dimen>
+    <dimen name="authentication_text_size_small">15sp</dimen>
+    <dimen name="authentication_text_size_tiny">12sp</dimen>
+    <dimen name="authentication_text_padding">6dp</dimen>
+    <dimen name="authentication_text_margin_base">5dp</dimen>
+    <dimen name="authentication_text_margin_large">15dp</dimen>
+    <dimen name="authentication_layout_margin_large">15dp</dimen>
+    <dimen name="authentication_wine_pic_height">200dp</dimen>
+    <dimen name="authentication_wine_pic_width">80dp</dimen>
+    <dimen name="authentication_national_flag_dimen">10dp</dimen>
+    <dimen name="authentication_button_padding_small">10dp</dimen>
+    <dimen name="authentication_button_padding_large">14dp</dimen>
+    <dimen name="authentication_button_padding_xlarge">16dp</dimen>
+    <dimen name="authentication_fake_page_width">200dp</dimen>
+    <dimen name="authentication_fake_icon">60dp</dimen>
+</resources>

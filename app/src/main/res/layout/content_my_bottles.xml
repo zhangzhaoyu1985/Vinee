@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_bottles_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.tagtalk.winemate.MyBottlesActivity"
+    tools:showIn="@layout/activity_my_bottles"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/my_bottles_user_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@null"/>
+
+    <View
+        android:id="@+id/my_bottles_horizontal_divider_1"
+        style="@style/Horizontal_Divider"
+        android:layout_below="@+id/my_bottles_user_icon"
+        android:layout_alignStart="@+id/my_bottles_opened_bottle"
+        android:layout_alignLeft="@+id/my_bottles_opened_bottle"
+        android:layout_marginTop="5dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/my_bottles_opened_bottle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/my_bottles_user_icon"
+        android:layout_toEndOf="@+id/my_bottles_user_icon"
+        android:layout_toRightOf="@+id/my_bottles_user_icon"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/my_bottles_opened_bottle_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@null"
+            android:src="@drawable/bottle_108x108_grey"/>
+
+        <TextView
+            android:id="@+id/my_bottles_opened_bottle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/my_bottles_opened_bottle_icon"
+            android:layout_alignTop="@+id/my_bottles_opened_bottle_icon"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/my_bottles_opened_bottle_icon"
+            android:layout_toRightOf="@+id/my_bottles_opened_bottle_icon"
+            android:gravity="center_vertical"
+            android:text="@string/my_bottles_activity_opened_bottle_text"
+            android:textSize="@dimen/highlight_text_size"
+            tools:ignore="RelativeOverlap"/>
+
+
+        <TextView
+            android:id="@+id/my_bottles_opened_bottle_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/my_bottles_opened_bottle_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/my_bottles_opened_bottle_text"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/highlight_text_size"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_bottles_rated_bottle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/my_bottles_opened_bottle"
+        android:layout_alignStart="@+id/my_bottles_opened_bottle"
+        android:layout_below="@+id/my_bottles_opened_bottle"
+        android:layout_marginTop="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/my_bottles_rated_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:contentDescription="@null"
+            android:src="@drawable/star_108x108_grey"/>
+
+        <TextView
+            android:id="@+id/my_bottles_rated_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/my_bottles_rated_icon"
+            android:layout_alignTop="@+id/my_bottles_rated_icon"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/my_bottles_rated_icon"
+            android:layout_toRightOf="@+id/my_bottles_rated_icon"
+            android:gravity="center_vertical"
+            android:text="@string/my_bottles_activity_rated_text"
+            android:textSize="@dimen/highlight_text_size"/>
+
+        <TextView
+            android:id="@+id/my_bottles_rated_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/my_bottles_rated_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/my_bottles_rated_text"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/highlight_text_size"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_bottles_scanned_bottle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/my_bottles_opened_bottle"
+        android:layout_alignStart="@+id/my_bottles_opened_bottle"
+        android:layout_below="@+id/my_bottles_rated_bottle"
+        android:layout_marginTop="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/my_bottles_wish_list_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@null"
+            android:src="@drawable/wishlist_108x108_grey"/>
+
+        <TextView
+            android:id="@+id/my_bottles_wish_list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/my_bottles_wish_list_icon"
+            android:layout_alignTop="@+id/my_bottles_wish_list_icon"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/my_bottles_wish_list_icon"
+            android:layout_toRightOf="@+id/my_bottles_wish_list_icon"
+            android:gravity="center_vertical"
+            android:text="@string/my_bottles_activity_scanned_text"
+            android:textSize="@dimen/highlight_text_size"/>
+
+        <TextView
+            android:id="@+id/my_bottles_wish_list_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/my_bottles_wish_list_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/my_bottles_wish_list_text"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/highlight_text_size"/>
+    </RelativeLayout>
+
+    <view
+        android:id="@+id/my_bottles_recycler_view"
+        class="android.support.v7.widget.RecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/my_bottles_horizontal_divider_1"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

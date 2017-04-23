@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/content_friend_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.tagtalk.winemate.FriendListActivity"
+    tools:showIn="@layout/activity_friend_list">
+
+    <EditText
+        android:id="@+id/friend_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="20px"
+        android:layout_marginLeft="20px"
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
+        android:background="@drawable/rounded_edittext"
+        android:fontFamily="sans-serif"
+        android:hint="@string/friend_search_hint"
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        android:windowSoftInputMode="stateHidden"
+        android:textColorHint="#BDBDBD"/>
+    <view
+        android:id="@+id/friend_list_recycler_view"
+        android:layout_below="@+id/friend_search"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20px"
+        android:layout_marginLeft="20px"
+        class="android.support.v7.widget.RecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <view
+        android:id="@+id/search_friend_list_recycler_view"
+        android:layout_below="@+id/friend_search"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20px"
+        android:layout_marginLeft="20px"
+        class="android.support.v7.widget.RecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</RelativeLayout>

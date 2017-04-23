@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#27AE60</color>
+    <color name="colorAccent">#4CAF50</color>
+
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_black">#1C140D</color>
+    <color name="text_green">#00FF33</color>
+    <color name="color_yellow">#FFCC00</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="text_gray">#9E9E9E</color>
+    <color name="text_gray_darker">#909090</color>
+    <color name="text_gray_light">#E0E0E0</color>
+    <color name="text_red">#FF0000</color>
+    <color name="text_dark">#555555</color>
+    <color name="drawable_light">#B0B0B0</color>
+    <color name="drawable_lightest">#E0E0E0</color>
+    <color name="drawable_dark">#888888</color>
+    <color name="button_dark">#888888</color>
+    <color name="text_gray_dark">#576267</color>
+
+    <color name="rating_bar_background">#9E9E9E</color>
+    <color name="rating_bar_progress">#4CAF50</color>
+
+    <color name="grid_view_background">#CFD8DC</color>
+    <color name="transparent_white">#80FFFFFF</color>
+
+    <!-- Header Bar -->
+    <color name="colorHeaderBackground">#E0E0E0</color>
+    <color name="colorHeaderText">#727272</color>
+    <color name="colorHeaderTextSelected">#444444</color>
+    <color name="colorHeaderBarBottomLine">#666666</color>
+    <color name="viewPagerSelected">#595959</color>
+    <color name="viewPagerTabIndicatorDefault">#F2E9E1</color>
+    <color name="viewPagerTabIndicatorSelected">#1C140D</color>
+    <color name="mainActivityTabsUnselectedGray">#BDBDBD</color>
+    <color name="navDrawerItemUnselected">#797979</color>
+
+    <color name="colorActivityBackground">#E5E5E5</color>
+    <color name="colorDividerGreen">#27AE60</color>
+    <color name="colorTextWhite">#F2E9E1</color>
+    <color name="colorTextBlack">#1C140D</color>
+    <color name="colorTextGray">#828282</color>
+
+    <!-- Remove this once we have color plan -->
+    <color name="colorPrimaryDark">#27AE60</color>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    android:id="@+id/winery_info_single_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/redeem_single_item_wine_pic"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/redeem_single_item_wine_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redeem_single_item_wine_pic"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="start"
+            android:textColor="@color/colorTextBlack"/>
+
+        <TextView
+            android:id="@+id/redeem_single_item_wine_region"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/redeem_single_item_wine_name"
+            android:layout_alignLeft="@+id/redeem_single_item_wine_name"
+            android:layout_alignRight="@+id/redeem_single_item_wine_name"
+            android:layout_alignStart="@+id/redeem_single_item_wine_name"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/redeem_single_item_wine_name"
+            android:gravity="start"
+            android:textColor="@color/colorTextBlack"/>
+
+        <TextView
+            android:id="@+id/redeem_single_item_wine_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/redeem_single_item_wine_name"
+            android:layout_alignLeft="@+id/redeem_single_item_wine_name"
+            android:layout_alignRight="@+id/redeem_single_item_wine_name"
+            android:layout_alignStart="@+id/redeem_single_item_wine_name"
+            android:layout_below="@+id/redeem_single_item_wine_region"
+            android:gravity="start"
+            android:textColor="@color/colorTextBlack"/>
+
+        <TextView
+            android:id="@+id/redeem_single_item_out_of_stock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/redeem_single_item_wine_points"
+            android:gravity="center_horizontal|bottom"
+            android:text="@string/redeem_points_activity_out_of_stock"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/redeem_single_item_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/redeem_single_item_wine_name"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/redeem_single_item_wine_name"
+            android:layout_below="@+id/redeem_single_item_wine_points"
+            android:gravity="start|bottom"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/redeem_single_item_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/redeem_single_item_quantity_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/redeem_points_activity_quantity"
+                tools:text="Qty:"/>
+
+            <EditText
+                android:id="@+id/redeem_single_item_quantity_input"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:background="@drawable/edit_text_shadow_round"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="@dimen/small_text_size"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

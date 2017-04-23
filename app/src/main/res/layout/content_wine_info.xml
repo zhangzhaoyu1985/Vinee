@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wine_info_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:visibility="gone"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.tagtalk.winemate.WineInfoActivity"
+    tools:showIn="@layout/activity_wine_info">
+
+    <RelativeLayout
+        android:id="@+id/wine_info_winery_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/wine_info_winery_info_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/wine_info_winery_info_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/wine_info_winery_info_logo"
+            android:layout_alignTop="@+id/wine_info_winery_info_logo"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@+id/wine_info_winery_info_logo"
+            android:layout_toLeftOf="@+id/wine_info_winery_info_link"
+            android:layout_toRightOf="@+id/wine_info_winery_info_logo"
+            android:layout_toStartOf="@+id/wine_info_winery_info_link"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/wine_info_winery_info_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/wine_info_winery_info_logo"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/wine_info_winery_info_logo"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:text="@string/wine_info_activity_winery_info_link"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/wine_info_basic_info_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wine_info_winery_info_logo"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:id="@+id/wine_info_basic_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/wine_info_wine_picture"
+                    android:layout_width="130dp"
+                    android:layout_height="260dp"
+                    android:contentDescription="@null" />
+
+                <Button
+                    android:id="@+id/wine_info_buy_now_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/wine_info_wine_picture"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/wine_info_wine_picture"
+                    android:layout_toRightOf="@+id/wine_info_wine_picture"
+                    android:background="@drawable/rectangle_button_green_brighter"
+                    android:contentDescription="@null"
+                    android:drawableLeft="@drawable/ic_local_grocery_store_white_24px"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_local_grocery_store_white_24px"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/wine_info_activity_buy_button_text"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/wine_info_total_rating_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/wine_info_buy_now_button"
+                    android:layout_alignLeft="@+id/wine_info_average_rating_bar_indicator"
+                    android:layout_alignStart="@+id/wine_info_average_rating_bar_indicator"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/micro_text_size" />
+
+                <TextView
+                    android:id="@+id/wine_info_average_rating_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/wine_info_total_rating_number"
+                    android:layout_alignLeft="@+id/wine_info_buy_now_button"
+                    android:layout_alignStart="@+id/wine_info_buy_now_button"
+                    android:text="@string/wine_info_activity_average_rating"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp" />
+
+                <RatingBar
+                    android:id="@+id/wine_info_average_rating_bar_indicator"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/wine_info_average_rating_text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/wine_info_average_rating_text"
+                    android:layout_toRightOf="@+id/wine_info_average_rating_text"
+                    android:backgroundTint="@color/rating_bar_background"
+                    android:isIndicator="true"
+                    android:progressTint="@color/rating_bar_progress" />
+
+                <TextView
+                    android:id="@+id/wine_info_average_rating_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/wine_info_average_rating_text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/wine_info_average_rating_bar_indicator"
+                    android:layout_toRightOf="@+id/wine_info_average_rating_bar_indicator"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/wine_info_national_flag"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/wine_info_wine_location"
+                    android:layout_above="@+id/wine_info_average_rating_text"
+                    android:layout_alignLeft="@+id/wine_info_average_rating_text"
+                    android:layout_alignStart="@+id/wine_info_average_rating_text"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/wine_info_wine_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/wine_info_average_rating_text"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/wine_info_national_flag"
+                    android:layout_toRightOf="@+id/wine_info_national_flag"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/wine_info_wine_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/wine_info_national_flag"
+                    android:layout_alignLeft="@+id/wine_info_average_rating_text"
+                    android:layout_alignStart="@+id/wine_info_average_rating_text"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/wine_info_wine_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/wine_info_wine_year"
+                    android:layout_alignLeft="@+id/wine_info_average_rating_text"
+                    android:layout_alignStart="@+id/wine_info_average_rating_text"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/wine_info_winery_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/wine_info_wine_name"
+                    android:layout_alignLeft="@+id/wine_info_average_rating_text"
+                    android:layout_alignStart="@+id/wine_info_average_rating_text"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/wine_info_share_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/wine_info_winery_name"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_share_black_24px" />
+
+                <ImageButton
+                    android:id="@+id/wine_info_add_to_wishlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/wine_info_winery_name"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_toLeftOf="@+id/wine_info_share_content"
+                    android:layout_toStartOf="@+id/wine_info_share_content"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_turned_in_black_24px" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Disable Average Price for now.
+        <TextView
+            android:id="@+id/wine_info_average_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/wine_info_average_rating_text"
+            android:layout_below="@id/wine_info_divider_1"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/wine_info_activity_average_price"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:id="@+id/wine_info_average_price_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/wine_info_average_price_text"
+            android:layout_alignLeft="@+id/wine_info_average_price_text"
+            android:layout_alignRight="@+id/wine_info_average_price_text"
+            android:layout_alignStart="@+id/wine_info_average_price_text"
+            android:layout_below="@id/wine_info_average_rating_text"
+            android:gravity="center"
+            android:textColor="@color/text_black"
+            android:textSize="20sp"/>
+        -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/wine_info_my_rating_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wine_info_basic_info_card"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:id="@+id/wine_info_my_rating_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/wine_info_user_icon"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/user_icon_man" />
+
+                <TextView
+                    android:id="@+id/wine_info_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/wine_info_user_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/wine_info_user_icon"
+                    android:layout_toRightOf="@+id/wine_info_user_icon"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="zhaoyuzhang" />
+
+                <TextView
+                    android:id="@+id/wine_info_rating_bar_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/wine_info_user_name"
+                    android:layout_alignStart="@+id/wine_info_user_name"
+                    android:layout_below="@id/wine_info_user_name"
+                    android:text="@string/wine_info_activity_rating_bar_text"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/wine_info_re_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/wine_info_rating_bar_text"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/wine_info_rating_bar_text"
+                    android:layout_toRightOf="@+id/wine_info_rating_bar_text"
+                    android:text="@string/wine_info_activity_re_rate"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <RatingBar
+                    android:id="@+id/wine_info_rating_bar"
+                    style="?android:attr/ratingBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/wine_info_user_name"
+                    android:layout_alignStart="@+id/wine_info_user_name"
+                    android:layout_below="@+id/wine_info_rating_bar_text"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/rating_bar_background"
+                    android:isIndicator="false"
+                    android:numStars="5"
+                    android:progressTint="@color/rating_bar_progress"
+                    android:stepSize="0.5" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/wine_info_bouquet_n_plate_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wine_info_my_rating_card"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:id="@+id/wine_info_bouquet_n_plate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/wine_info_bouquet_n_plate_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_bouquet_palate_green" />
+
+                <TextView
+                    android:id="@+id/wine_info_bouquet_n_plate_text_prefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/wine_info_bouquet_n_plate_icon"
+                    android:layout_toRightOf="@+id/wine_info_bouquet_n_plate_icon"
+                    android:text="@string/wine_info_activity_bouquet_n_palate_prefix"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <WebView
+                    android:id="@+id/wine_info_bouquet_n_plate_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/wine_info_bouquet_n_plate_icon"
+                    android:layout_alignStart="@+id/wine_info_bouquet_n_plate_icon"
+                    android:layout_below="@+id/wine_info_bouquet_n_plate_icon"
+                    android:layout_marginTop="5dp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/wine_info_food_pairing_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wine_info_bouquet_n_plate_card"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:id="@+id/wine_info_food_pairing_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/wine_info_food_pairing_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_food_pairing_green" />
+
+                <TextView
+                    android:id="@+id/wine_info_food_pairing_prefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/wine_info_food_pairing_icon"
+                    android:layout_toRightOf="@+id/wine_info_food_pairing_icon"
+                    android:text="@string/wine_info_activity_food_pairing_prefix"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <WebView
+                    android:id="@+id/wine_info_food_pairing_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/wine_info_food_pairing_icon"
+                    android:layout_alignStart="@+id/wine_info_food_pairing_icon"
+                    android:layout_below="@+id/wine_info_food_pairing_icon"
+                    android:layout_marginTop="5dp" />
+
+                <view
+                    android:id="@+id/wine_info_food_pairing_pictures_recycler_view"
+                    class="android.support.v7.widget.RecyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/wine_info_food_pairing_text" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/wine_info_cellaring_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wine_info_food_pairing_card"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:id="@+id/wine_info_cellaring_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/wine_info_cellaring_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_cellaring_green" />
+
+                <TextView
+                    android:id="@+id/wine_info_cellaring_prefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/wine_info_cellaring_icon"
+                    android:layout_toRightOf="@+id/wine_info_cellaring_icon"
+                    android:text="@string/wine_info_activity_cellaring_prefix"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <WebView
+                    android:id="@+id/wine_info_cellaring_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/wine_info_cellaring_icon"
+                    android:layout_alignStart="@+id/wine_info_cellaring_icon"
+                    android:layout_below="@+id/wine_info_cellaring_icon"
+                    android:layout_marginTop="5dp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/wine_info_region_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wine_info_cellaring_card"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:id="@+id/wine_info_region_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/wine_info_region_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_region_green" />
+
+                <TextView
+                    android:id="@+id/wine_info_region_prefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/wine_info_region_icon"
+                    android:layout_toRightOf="@+id/wine_info_region_icon"
+                    android:text="@string/wine_info_activity_region_prefix"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/wine_info_region_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/wine_info_region_icon"
+                    android:layout_alignStart="@+id/wine_info_region_icon"
+                    android:layout_below="@+id/wine_info_region_icon"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <WebView
+                    android:id="@+id/wine_info_region_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/wine_info_region_icon"
+                    android:layout_alignStart="@+id/wine_info_region_icon"
+                    android:layout_below="@+id/wine_info_region_name" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/wine_info_grape_varieties_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wine_info_region_card"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:id="@+id/wine_info_grape_varieties_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/wine_info_grape_varieties_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_grape_varieties_green" />
+
+                <TextView
+                    android:id="@+id/wine_info_grape_varieties_text_prefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/wine_info_grape_varieties_icon"
+                    android:layout_toRightOf="@+id/wine_info_grape_varieties_icon"
+                    android:text="@string/wine_info_activity_grape_varieties_prefix"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <WebView
+                    android:id="@+id/wine_info_grape_varieties_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/wine_info_grape_varieties_icon"
+                    android:layout_alignStart="@+id/wine_info_grape_varieties_icon"
+                    android:layout_below="@+id/wine_info_grape_varieties_icon" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <ImageView
+            android:id="@+id/wine_info_reviews_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/wine_info_grape_varieties_card"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_reviews_green" />
+
+        <TextView
+            android:id="@+id/wine_info_reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wine_info_grape_varieties_card"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/wine_info_reviews_icon"
+            android:layout_toRightOf="@+id/wine_info_reviews_icon"
+            android:text="@string/wine_info_activity_reviews"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <view
+            android:id="@+id/wine_info_reviews_recycler_view"
+            class="android.support.v7.widget.RecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/wine_info_reviews_icon"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:id="@+id/wine_info_add_review_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/wine_info_reviews_recycler_view"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:background="@drawable/icon_add_green" />
+
+        <TextView
+            android:id="@+id/wine_info_add_review_text_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/wine_info_add_review_button"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_toEndOf="@+id/wine_info_add_review_button"
+            android:layout_toRightOf="@+id/wine_info_add_review_button"
+            android:text="@string/wine_info_activity_add_review_text_link"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/wine_info_add_review_text_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/wine_info_add_review_text_link"
+            android:layout_alignStart="@+id/wine_info_add_review_text_link"
+            android:layout_below="@+id/wine_info_add_review_text_link"
+            android:text="@string/wine_info_activity_add_review_text_hint"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/wine_info_divider"
+            style="@style/Horizontal_Divider_Thin"
+            android:layout_below="@+id/wine_info_add_review_text_hint"
+            android:layout_margin="15dp" />
+
+        <Button
+            android:id="@+id/wine_info_add_to_my_bottles_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wine_info_divider"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_bottle_white_48dp"
+            android:drawableStart="@drawable/ic_bottle_white_48dp"
+            android:gravity="center"
+            android:paddingEnd="70dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="70dp"
+            android:paddingStart="50dp"
+            android:text="@string/wine_info_activity_add_to_my_bottles_button"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/highlight_text_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

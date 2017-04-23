@@ -1,0 +1,339 @@
+<resources>
+    <!-- Shared Strings -->
+    <string name="cancel">Cancel</string>
+    <string name="OK">OK</string>
+    <string name="app_name">Vinee</string>
+    <string name="action_settings">Settings</string>
+    <string name="network_problem_title">Network problem</string>
+    <string name="network_problem_desc">We are sorry. We couldn\'t complete the operation due to network problem. Please make sure you have network access.</string>
+    <string name="authentication_activity_contact_us_button">Contact Us</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="reset_password_activity_title">Reset Password</string>
+    <string name="reset_password_activity_email_hint">Email</string>
+    <string name="reset_password_activity_intro">Enter your email address below and we\'ll send you new password</string>
+    <string name="reset_password_activity_submit_button_text">Submit</string>
+    <string name="click_here">Click here</string>
+    <string name="text_end">.</string>
+
+    <!-- Font awesome codes:  http://fontawesome.io/cheatsheet/ -->
+    <string name="exclamation_circle">&#xf06a;</string>
+    <string name="fa_check_circle">&#xf058;</string>
+    <string name="fa_wechat">&#xf1d7;</string>
+
+    <string name="authentication_activity_title">Authentication</string>
+    <string name="authentication_activity_view_more_button">View More…</string>
+    <string name="authentication_activity_no_record_warning">This Tag is not recorded</string>
+    <string name="authentication_activity_scan_again_title">Please scan again</string>
+    <string name="authentication_activity_hold_longer_time_warning">You may have moved your phone too fast. Please tap again and keep your phone on top of the NFC tag until authentication result pop up. Still failed? Please\u0020</string>
+    <string name="authentication_activity_warning_no_ndef_title">No NDEF messages found</string>
+    <string name="authentication_activity_warning_no_ndef_messages">We cannot find NDEF messages in this tag. If you consistently cannot scan successfully, please contact us.</string>
+    <string name="authentication_activity_warning_no_ndef_records">No NDEF records found!</string>
+    <string name="authentication_activity_warning_tag_not_null">Tag cannot be null!</string>
+    <string name="authentication_activity_warning_tag_not_formatted">Tag is not formatted!</string>
+    <string name="authentication_activity_warning_tag_not_writable">Tag is not writable!</string>
+    <string name="authentication_activity_warning_tag_written">Tag written!</string>
+    <string name="authentication_activity_warning_bottle_opened">This bottle is opened!</string>
+    <string name="authentication_activity_the_wine">The Wine:</string>
+    <string name="authentication_activity_year">Year:</string>
+    <string name="authentication_activity_region">Region:</string>
+    <string name="authentication_activity_wrong_auth_code_reminder">Authentication code is incorrect!</string>
+    <string name="authentication_activity_result_genuine_headline_prefix">BOTTLE IS\u0020</string>
+    <string name="authentication_activity_result_genuine_headline">GENUINE</string>
+    <string name="authentication_activity_result_genuine">AND HAS NEVER BEEN OPENED</string>
+    <string name="authentication_activity_result_opened_headline_prefix">BOTTLE IS\u0020</string>
+    <string name="authentication_activity_result_opened_headline">OPENED</string>
+    <string name="authentication_activity_result_opened_where">Where:</string>
+    <string name="authentication_activity_result_opened_when">When:</string>
+    <string name="authentication_activity_result_opened_caution">If you see this bottle on sale in any retail shop or have bought it online, please\u0020</string>
+    <string name="authentication_activity_contact_us">CONTACT US</string>
+    <string name="authentication_activity_result_fake">CANNOT IDENTIFY THIS BOTTLE</string>
+    <string name="authentication_activity_contact_us_fake">immediately to help track counterfeiters.</string>
+    <string name="authentication_activity_open_bottle_button_left">Click to Open and Earn</string>
+    <string name="authentication_activity_open_bottle_button_right">Points</string>
+    <string name="authentication_activity_location_request">You need to grant Vinee access to Location to use authentication service!</string>
+    <string name="authentication_activity_view_more">View More</string>
+    <string name="authentication_activity_user_rating">Rating:\u0020</string>
+    <string name="authentication_activity_fake_headline">CANNOT IDENTIFY THIS BOTTLE</string>
+    <string name="authentication_activity_fake_description_begin">Data has not been captured successfully.\nPlease\u0020</string>
+    <string name="authentication_activity_average_rating">Rating:</string>
+
+    <string name="wine_info_activity_average_rating">Rating:</string>
+    <string name="wine_info_activity_average_price">AVERAGE PRICE</string>
+    <string name="wine_info_activity_rating_bar_text">Tap to Rate, slide for half star</string>
+    <string name="wine_info_activity_rating_bar_already_rated_text">You\'ve rated this wine.</string>
+    <string name="wine_info_activity_reviews">Reviews</string>
+    <string name="wine_info_activity_add_to_my_bottles_button">Add to My Bottles</string>
+    <string name="wine_info_activity_re_rate"><u>Re-rate?</u></string>
+    <string name="wine_info_activity_title">The Wine</string>
+    <string name="wine_info_activity_add_review_text_link">Add Reviews</string>
+    <string name="wine_info_activity_add_review_text_hint">Let others know what you think about it</string>
+    <string name="wine_info_activity_unfollow">Unfollow</string>
+    <string name="wine_info_activity_follow">Follow</string>
+    <string name="wine_info_activity_following">Following</string>
+    <string name="wine_info_activity_unfollow_alert_title">Unfollow</string>
+    <string name="wine_info_activity_unfollow_alert_message">Are you sure to unfollow </string>
+    <string name="wine_info_activity_unfollow_alert_confirm">Confirm</string>
+    <string name="wine_info_activity_unfollow_alert_cancel">Cancel</string>
+    <string name="wine_info_activity_winery_info_link"><u>Visit the Winery</u></string>
+    <string name="wine_info_activity_buy_button_text">Buy Now</string>
+    <string name="wine_info_activity_bouquet_n_palate_prefix">Bouquet &amp; Palate</string>
+    <string name="wine_info_activity_food_pairing_prefix">Food Pairing</string>
+    <string name="wine_info_activity_cellaring_prefix">Cellaring</string>
+    <string name="wine_info_activity_region_prefix">Region</string>
+    <string name="wine_info_activity_grape_varieties_prefix">Grape Varieties</string>
+
+
+    <string name="winery_info_activity_view_more">View More</string>
+    <string name="winery_info_activity_our_wines">Our Wines</string>
+    <string name="winery_info_website_link_text">Enter Website</string>
+
+    <string name="write_rating_and_review_activity_title">Rate &amp; Review</string>
+    <string name="write_rating_and_review_hint"><b>Write your review here</b>\n(Max 1000 Characters)</string>
+    <string name="write_rating_and_review_submit_button">Submit</string>
+    <string name="write_rating_and_review_content_limit">1000\//1000</string>
+
+    <string name="my_bottles_activity_title">My Bottles</string>
+    <string name="my_bottles_activity_opened_bottle_text">OPENED</string>
+    <string name="my_bottles_activity_rated_text">RATED</string>
+    <string name="my_bottles_activity_wish_list_text">WISHLIST</string>
+    <string name="my_bottles_activity_scanned_text">SCANNED</string>
+    <string name="my_bottles_activity_repurchase_button_text">Repurchase</string>
+
+    <string name="news_feed_activity_title">Discover</string>
+
+    <string name="qrscanner_activity_title">Scan QRCode to Confirm</string>
+    <string name="qrscanner_activity_hint">Please uncover the NFC label, and scan the QR code on the back!</string>
+    <string name="qrscanner_activity_check_steps_btn_text">Click here to see how to scan QR code</string>
+    <string name="qrscanner_activity_camera_request">You need to grant Vinee access to camera to scan QR code!</string>
+
+    <string name="user_profile_my_profile_activity_title">My Profile</string>
+    <string name="user_profile_other_profile_activity_title">User Profile</string>
+    <string name="user_profile_edit">Edit</string>
+    <string name="user_profile_summary_text">SUMMARY</string>
+    <string name="user_profile_wishlist_text">WISHLIST</string>
+    <string name="user_profile_following_text">FOLLOWING</string>
+    <string name="user_profile_follower_text">FOLLOWER</string>
+    <string name="user_profile_rating_text">RATING</string>
+    <string name="user_profile_name">Name: </string>
+    <string name="user_profile_user_email">Email: </string>
+    <string name="user_profile_user_gender">Gender: </string>
+    <string name="user_profile_user_dob">Date of Birth: </string>
+    <string name="user_profile_user_points">Reward Points: </string>
+    <string name="user_profile_upload_photo">&#xf030;</string>
+
+    <string name="friend_list_activity_title">Add More Friends</string>
+    <string name="friend_search_hint">&#xf002; Search</string>
+
+    <string name="reward_program_add_reward_points_response_already_earned">You have already received this reward!</string>
+    <string name="reward_program_add_reward_points_response_success_prefix">You just earned</string>
+    <string name="reward_program_add_reward_points_response_success_suffix">points.</string>
+
+    <string name="upload_photo_activity_select_button">Select Photo</string>
+    <string name="upload_photo_activity_upload_button">Upload Photo</string>
+    <string name="upload_photo_activity_uploading">Uploading…</string>
+    <string name="upload_photo_activity_waiting">Please wait…</string>
+    <string name="upload_photo_activity_please_select_a_photo">Please select a photo to upload!</string>
+
+    <string name="share_dialog_activity_wechat_friends">Friends</string>
+    <string name="share_dialog_activity_wechat_moments">Moments</string>
+    <string name="share_dialog_activity_others">Others</string>
+    <string name="share_dialog_activity_title">Share To</string>
+
+    <string name="redeem_points_activity_points">Points:</string>
+    <string name="redeem_points_activity_out_of_stock">Out of stock</string>
+    <string name="redeem_points_activity_submit">Submit</string>
+    <string name="redeem_points_activity_hint">Please select items you would like to redeem:</string>
+    <string name="redeem_points_activity_quantity">Qty:</string>
+    <string name="redeem_points_activity_current_points_text_prefix">Your current points at</string>
+    <string name="redeem_points_activity_current_points_text_postfix">is:</string>
+    <string name="redeem_points_activity_warning_enter_number">Please enter how many bottles you like to redeem!</string>
+    <string name="redeem_points_activity_warning_points_exceed">The redeemed points exceeds your current points. Please re-select!</string>
+    <string name="redeem_points_activity_total_cost_prefix">Total:</string>
+    <string name="redeem_points_activity_balance_prefix">Balance:</string>
+
+    <string name="redeem_submit_activity_hint">Please fill the form completely and then click submit.</string>
+    <string name="redeem_submit_activity_fullname_hint">Full Name</string>
+    <string name="redeem_submit_activity_street_hint">Street Address/Apt/Ste/Unit/Building/Floor/etc.</string>
+    <string name="redeem_submit_activity_city_hint">City</string>
+    <string name="redeem_submit_activity_province_hint">State/Province/Region</string>
+    <string name="redeem_submit_activity_country_hint">Country</string>
+    <string name="redeem_submit_activity_zipcode_hint">ZipCode</string>
+    <string name="redeem_submit_activity_phone_number_hint">Phone Number</string>
+    <string name="redeem_submit_activity_email_hint">Email(Optional)</string>
+    <string name="redeem_submit_activity_submit_button">Submit</string>
+    <string name="redeem_submit_activity_incomplete_info">Please fill all required fields!</string>
+    <string name="redeem_submit_activity_submit_success">Submitted successfully!\nWe will send you an email when we ship the package.</string>
+    <string name="redeem_submit_activity_submit_failed_bad_network">Bad Network!</string>
+    <string name="redeem_submit_activity_submit_failed">Submitted failed!</string>
+
+    <string name="user_name_no_empty">Username cannot be empty!</string>
+    <string name="password_no_empty">Password cannot be empty!</string>
+    <string name="email_no_empty">Email cannot be empty!</string>
+    <string name="reenter_password">Please re-enter your password!</string>
+    <string name="password_not_match">The passwords you entered don\'t match</string>
+    <string name="login_failed">Login failed.\nPlease check your credentials!</string>
+    <string name="user_name_exists">Username already exists</string>
+    <string name="email_exists">Email already exists</string>
+    <string name="invalid_signup_input">Invalid Sign Up Input</string>
+    <string name="pw_reset_email_sent">A password reset email has been sent.</string>
+    <string name="email_not_exists">The email address doesn\'t have an associated user account. Please check your input.</string>
+    <string name="signup_success_notice">You\'ve successfully signed up!\n Before you login, please activate your account via the activation email we just sent you.</string>
+    <string name="sent_activation_email_success_title">Email Sent</string>
+    <string name="sent_activation_email_success_notice">We\'ve sent you an activation email. Please check your email box, and activate your account from there.</string>
+    <string name="rating_no_zero">Minimal rating score is 0.5.</string>
+    <string name="review_less_than_ten_chars">Minimal characters is 10.</string>
+    <string name="rating_review_write_fail">Submission failed! Please try again!</string>
+    <string name="rating_review_write_success">Submitted Successfully!</string>
+
+    <string name="title_activity_authentication">AuthenticationActivity</string>
+    <string name="title_activity_wine_info">WineInfoActivity</string>
+    <string name="wine_info_menu_search_wine">Search Wine</string>
+    <string name="wine_info_menu_find_friend">Find friends</string>
+    <string name="wine_info_menu_my_profile">My Profile</string>
+    <string name="wine_info_menu_help_desk">Help Desk</string>
+    <string name="wine_info_menu_groups">Groups</string>
+    <string name="wine_info_menu_log_out">Log out</string>
+    <string name="title_activity_write_rating_and_review">WriteRatingAndReview</string>
+    <string name="title_activity_sign_up_success">SignUpSuccess</string>
+    <string name="title_activity_news_feed">NewsFeedActivity</string>
+    <string name="title_activity_my_bottles">MyBottlesActivity</string>
+    <string name="title_activity_add_to_my_bottles">AddToMyBottlesActivity</string>
+    <string name="title_activity_news_feed_web_view">NewsFeedWebViewActivity</string>
+    <string name="title_activity_qrscanner">QRScanner</string>
+    <string name="title_activity_winery_info">WineryInfoActivity</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <string name="title_activity_winery_info_detail_web_view">WineryInfoDetailWebViewActivity</string>
+    <string name="title_activity_help_desk">HelpDesk</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="help_desk_activity_title">Contact Us</string>
+    <string name="help_desk_activity_contact_name_hint">Your Name</string>
+    <string name="help_desk_activity_contact_email_hint">Your Email</string>
+    <string name="help_desk_activity_contact_phone_hint">Your Phone Number</string>
+    <string name="help_desk_activity_contact_message_hint">Please tell us your questions</string>
+    <string name="help_desk_activity_submit_button_text">Contact Us</string>
+    <string name="settings_activity_title">Settings</string>
+    <string name="settings_activity_private_account">Hide my profile from strangers</string>
+    <string name="update_privacy_setting_failed_text">Failed to update. Please try later.</string>
+    <string name="wechat_share_title">I just found a great wine using Vinee!</string>
+    <string name="added_to_wishlist_text">Added to Wishlist!</string>
+    <string name="failed_to_add_to_wishlist_text">Server error: Failed to add to Wishlist</string>
+    <string name="removed_from_wishlist_text">Removed from Wishlist！</string>
+    <string name="failed_to_remove_from_wishlist_text">Sorry, failed to remove from wish list. Please try again later.</string>
+    <string name="wishlist_remove_alert_title">Remove</string>
+    <string name="wishlist_remove_alert_message">Are you sure to Remove this item from your wish list?</string>
+    <string name="wishlist_remove_alert_confirm">Confirm</string>
+    <string name="wishlist_remove_alert_cancel">Cancel</string>
+    <string name="tagtalk_email">support@tagtalk.co</string>
+    <string name="title_activity_friend_list">FriendListActivity</string>
+    <string name="title_activity_upload_photo">Upload Photo</string>
+
+    <string name="dialog_title_sending_email">Sending Email</string>
+    <string name="dialog_text_be_patient">Please be patient</string>
+    <string name="title_activity_redeem_points">Redeem Points</string>
+
+    <string name="failed_to_get_remote_data">Sorry, we can not get user data due to network problem or server error</string>
+    <string name="failed_to_do_operation">Sorry, we failed to do the operation due to network problem or server error</string>
+
+    <string name="location_permission_request_alert_title">Location Service Access Request</string>
+    <string name="location_permission_request_alert_message">Vinee needs access to your location service to continue!</string>
+    <string name="permission_request_alert_confirm">OK</string>
+    <string name="permission_request_alert_cancel">Quit Vinee</string>
+
+    <!-- New UI Flow -->
+    <!-- Header Bar -->
+    <string name="nfc_authentication_btn_desc">Authentication</string>
+    <string name="find_btn_desc">Discover</string>
+    <string name="my_bottles_btn_desc">My Bottles</string>
+    <!-- Nav Drawer -->
+    <string name="nav_drawer_my_profile">My Profile</string>
+    <string name="nav_drawer_friends">Search Friends</string>
+    <string name="nav_drawer_all_bottles">Explore Wines</string>
+    <string name="nav_drawer_wines">All Wines</string>
+    <string name="nav_drawer_contact_us">Contact Us</string>
+    <string name="nav_drawer_settings">Settings</string>
+    <string name="nav_drawer_logout">Log Out</string>
+    <string name="nav_drawer_quick_link_title">ＨＯＭＥ</string>
+    <string name="logout_confirm_title">Log Out</string>
+    <string name="logout_confirm_msg">Are you sure to leave Vinee?</string>
+    <string name="login_with_wechat">Login with Wechat</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <!-- NFC Authentication Intro Page -->
+    <string name="intro_nfc_authentication_activity_title">Authentication</string>
+    <string name="title_activity_intro_nfc_authentication">NFC Authentication</string>
+    <string name="intro_nfc_authentication_allow_title">Please Turn On NFC</string>
+    <string name="intro_nfc_authentication_allow_msg">To use Vinee\'s NFC Authentication, please turn on NFC function in Setting page.</string>
+    <string name="intro_nfc_authentication_no_nfc_title">No NFC Reader</string>
+    <string name="intro_nfc_authentication_no_nfc_msg">We are sorry, but your device doesn\'t have NFC reader. To use Vinee\'s NFC Authentication, please try a device with NFC reader.</string>
+    <string name="intro_nfc_authentication_desc_turn_on_nfc_btn">Enable NFC</string>
+    <string name="intro_nfc_no_nfc_desc">Sorry, your device does not support NFC, so you cannot use NFC authentication function. However you can still use other functions.</string>
+    <string name="intro_nfc_touch_nfc_desc">Tap your phone to the NFC chip</string>
+    <string name="intro_nfc_turn_on_nfc_desc">Enable NFC in Settings</string>
+    <string name="intro_nfc_turn_on_nfc_btn_text">Enable NFC</string>
+    <!-- Discovery Page -->
+    <string name="news_feed_click_to_see">Click to View</string>
+    <!-- My Bottles Page -->
+    <string name="my_bottles_fragment_redeem_points_btn_text"><u>Redeem Points</u></string>
+    <string name="my_bottles_fragment_redeem_points_text">&#160;Points</string>
+    <string name="my_bottles_fragment_opened_title">Opened</string>
+    <string name="my_bottles_fragment_scanned_title">Verified</string>
+    <string name="my_bottles_fragment_rated_title">Rated</string>
+    <!-- Bottle Single Item -->
+    <string name="my_bottles_single_item_my_rate">My Rate:</string>
+    my_bottles_single_item_my_rate
+    <!-- Location Warning Page -->
+    <string name="location_warning_activity_title">Enable Location Service</string>
+    <string name="location_warning_text_begin">The wine can\'t be verified without knowing your location.\u0020</string>
+    <string name="location_warning_text_end">\u0020to explore other wines protected by our anti-counterfeiting technology.</string>
+    <!-- Welcome Activity -->
+    <string name="welcome_page_nfc_auth_title">On-Demand Authentication\nReal-Time Bottle Open/Sealed Status</string>
+    <string name="welcome_page_open_bottle_title">Report Opened Bottles to Earn Points\nRedeem Points for Gift Wines</string>
+    <string name="welcome_page_more_features_title">Connect to Owners of Global Wineries\nTrusted Advices for Finding the Next Bottle</string>
+    <string name="welcome_page_sign_up">Sign Up</string>
+    <string name="welcome_page_forgot_password">Forgot Password?</string>
+    <string name="welcome_page_login">Log In</string>
+    <string name="welcom_page_wechat_login_text">Log in with Wechat</string>
+    <!-- Login Activity -->
+    <string name="login_activity_app_name">Vinee</string>
+    <string name="login_activity_or">Or</string>
+    <string name="login_activity_title">Log In</string>
+    <string name="login_activity_username_hint">Username</string>
+    <string name="login_activity_password_hint">Password</string>
+    <string name="login_activity_login_button_text">Log In</string>
+    <string name="login_activity_signup_button_text">Create account</string>
+    <string name="login_activity_forgot_button_text">Forgot Password?</string>
+    <string name="login_activity_wechat_signin_hit">Sign In with Wechat</string>
+    <string name="login_activity_send_me_activate_email_title">Account Not Activated</string>
+    <string name="login_activity_send_me_activate_email_msg">Let\'s resend you an activation email, so you can activate your account from there.</string>
+    <string name="login_activity_send_me_activate_email_btn">Send Me Email</string>
+    <string name="login_activity_send_activate_email_failed">Sorry, we failed to send you activation email due to unknown issue</string>
+    <!-- Signup Activity-->
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="signup_activity_title">Sign Up</string>
+    <string name="signup_activity_username_hint">Username</string>
+    <string name="signup_activity_email_hint">Email Address</string>
+    <string name="signup_activity_password_hint">Password</string>
+    <string name="signup_activity_password_reenter_hint">Confirm your password</string>
+    <string name="signup_activity_signup_button_text">Sign Up</string>
+    <string name="signup_activity_login_text_prefix">Already a member?</string>
+    <string name="signup_activity_login_text">Log in here.</string>
+    <string name="signup_activity_success_alert_positive_button_text">OK</string>
+    <string name="signup_activity_success_alert_title">Sign Up</string>
+    <string name="signup_activity_success_alert_message">You\'ve successfully signed up!</string>
+    <string name="title_activity_location_warning">LocationWarningActivity</string>
+    <!-- QR Scan Activity -->
+    <string name="msg_already_earned">We are sorry, you\'ve earned the points before.</string>
+    <string name="msg_failed_to_add_bottle">Failed to scan.\nPlease re-scan with a valid Vinee QR code.</string>
+    <string name="msg_failed_to_add_points">Failed to scan.\nPlease re-scan a valid Vinee QR code.</string>
+    <string name="msg_failed_to_scan_server_error">We are sorry, failed to scan due to server error. Please try again later.</string>
+    <string name="msg_add_point_succeed_prefix">You\'ve earned</string>
+    <string name="msg_add_point_succeed_suffix">Points successfully, which are added to your account.</string>
+    <!-- QR Scan Desc Activity -->
+    <string name="title_activity_qrscan_desc">Scan QR Code To Confirm</string>
+    <string name="qrscan_desc_hint">We need you to scan the QR code underneath the NFC tag to confirm.</string>
+    <string name="qrscan_desc_caution">Caution: you must not peel off the top layer if you don’t own this bottle.</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_all_bottles">Explore Wines</string>
+    <!-- User Profile Activity -->
+    <string name="wishlist_item_delete_btn">&#xf014;</string>
+</resources>

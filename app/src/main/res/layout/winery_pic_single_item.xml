@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/winery_pic_single_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/placeholder"/>
+
+    <Button
+        android:id="@+id/winery_website_link_button"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/winery_pic_single_picture"
+        android:layout_alignEnd="@+id/winery_pic_single_picture"
+        android:layout_alignRight="@+id/winery_pic_single_picture"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rectangle_button_green_brighter"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/winery_info_website_link_text"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

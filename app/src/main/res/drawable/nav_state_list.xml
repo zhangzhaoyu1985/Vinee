@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Item selected. Use the same color as default now-->
+    <item android:color="@color/navDrawerItemUnselected" android:state_checked="true" />
+    <!-- Item default -->
+    <item android:color="@color/navDrawerItemUnselected" />
+</selector>

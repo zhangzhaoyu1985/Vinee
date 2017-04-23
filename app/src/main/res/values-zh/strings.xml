@@ -1,0 +1,337 @@
+<resources>
+    <!-- Shared Strings -->
+    <string name="cancel">取消</string>
+    <string name="OK">确认</string>
+    <string name="app_name">葡萄藤</string>
+    <string name="action_settings">设置</string>
+    <string name="network_problem_title">网路问题</string>
+    <string name="network_problem_desc">很抱歉，由於网路问题，我们无法完成操作。请确定您的网路状态。</string>
+    <string name="authentication_activity_contact_us_button">联系我们</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="reset_password_activity_title">重设密码</string>
+    <string name="reset_password_activity_email_hint">邮箱</string>
+    <string name="reset_password_activity_intro">请在下方输入您的邮箱，我们会发送新的密码给您</string>
+    <string name="reset_password_activity_submit_button_text">提交</string>
+    <string name="click_here">点击这里</string>
+    <string name="text_end">。</string>
+
+    <!-- Font awesome codes:  http://fontawesome.io/cheatsheet/ -->
+    <string name="exclamation_circle">&#xf06a;</string>
+    <string name="fa_check_circle">&#xf058;</string>
+    <string name="fa_wechat">&#xf1d7;</string>
+
+    <string name="authentication_activity_title">验证</string>
+    <string name="authentication_activity_view_more_button">查看更多…</string>
+    <string name="authentication_activity_no_record_warning">我们没有这个标签的记录</string>
+    <string name="authentication_activity_scan_again_title">请再扫描一次</string>
+    <string name="authentication_activity_hold_longer_time_warning">请重新操作。手机轻触芯片时需要停留几秒直到验证信息出现。操作还是不成功？</string>
+    <string name="authentication_activity_warning_no_ndef_title">NDEF无内容</string>
+    <string name="authentication_activity_warning_no_ndef_messages">我们无法在这个NFC标签中找到NDEF纪录。如果您持续无法成功扫描，请联系我们。</string>
+    <string name="authentication_activity_warning_no_ndef_records">NDEF无记录！</string>
+    <string name="authentication_activity_warning_tag_not_null">Tag不能为空！</string>
+    <string name="authentication_activity_warning_tag_not_formatted">Tag未被格式化！</string>
+    <string name="authentication_activity_warning_tag_not_writable">Tag无法写入!</string>
+    <string name="authentication_activity_warning_tag_written">Tag 已写入!</string>
+    <string name="authentication_activity_warning_bottle_opened">本瓶酒已经被打开过！</string>
+    <string name="authentication_activity_the_wine">名称：</string>
+    <string name="authentication_activity_year">年份：</string>
+    <string name="authentication_activity_region">产区：</string>
+    <string name="authentication_activity_wrong_auth_code_reminder">防伪芯片验证密码不正确！</string>
+    <string name="authentication_activity_result_genuine_headline_prefix">验证成功：</string>
+    <string name="authentication_activity_result_genuine_headline">正品</string>
+    <string name="authentication_activity_result_genuine">原厂封装，该酒瓶未被打开过</string>
+    <string name="authentication_activity_result_opened_headline_prefix">酒瓶</string>
+    <string name="authentication_activity_result_opened_headline">已开启</string>
+    <string name="authentication_activity_result_opened_where">开瓶地点：</string>
+    <string name="authentication_activity_result_opened_when">开瓶时间：</string>
+    <string name="authentication_activity_result_opened_caution">如果发现此酒在零售终端货架上销售，请及时</string>
+    <string name="authentication_activity_contact_us">联系我们</string>
+    <string name="authentication_activity_result_fake">对该瓶酒验证失败</string>
+    <string name="authentication_activity_contact_us_fake">如果您看到该页信息，请马上点击上面的链接与我们联系，帮助我们追踪假冒伪劣制造者</string>
+    <string name="authentication_activity_open_bottle_button_left">点击开瓶可获</string>
+    <string name="authentication_activity_open_bottle_button_right">积分</string>
+    <string name="authentication_activity_location_request">您需要授权葡萄藤获得您的位置信息来使用防伪验证功能！</string>
+    <string name="authentication_activity_view_more">怎样品鉴</string>
+    <string name="authentication_activity_user_rating">用户评分：</string>
+    <string name="authentication_activity_fake_headline">验证失败</string>
+    <string name="authentication_activity_fake_description_begin">读取数据异常，\n请</string>
+    <string name="authentication_activity_average_rating">评分：</string>
+
+    <string name="wine_info_activity_average_rating">评分：</string>
+    <string name="wine_info_activity_average_price">平均报价</string>
+    <string name="wine_info_activity_rating_bar_text">点击这里评分，滑动评分条可以打0.5分</string>
+    <string name="wine_info_activity_rating_bar_already_rated_text">您已经为此酒评过分</string>
+    <string name="wine_info_activity_reviews">评论</string>
+    <string name="wine_info_activity_add_to_my_bottles_button">加入我的收藏</string>
+    <string name="wine_info_activity_re_rate"><u>重新评分？</u></string>
+    <string name="wine_info_activity_title">酒款详情</string>
+    <string name="wine_info_activity_add_review_text_link">添加您的评论</string>
+    <string name="wine_info_activity_add_review_text_hint">和大家分享您对这瓶酒的看法</string>
+    <string name="wine_info_activity_unfollow">取消关注</string>
+    <string name="wine_info_activity_following">已关注</string>
+    <string name="wine_info_activity_follow">关注</string>
+    <string name="wine_info_activity_unfollow_alert_title">取消关注</string>
+    <string name="wine_info_activity_unfollow_alert_message">你确定要取消关注 </string>
+    <string name="wine_info_activity_unfollow_alert_confirm">确认</string>
+    <string name="wine_info_activity_unfollow_alert_cancel">取消</string>
+    <string name="wine_info_activity_winery_info_link"><u>点击进入酒庄</u></string>
+    <string name="wine_info_activity_buy_button_text">点击购买</string>
+    <string name="wine_info_activity_bouquet_n_palate_prefix">酒香 &amp; 口感</string>
+    <string name="wine_info_activity_food_pairing_prefix">食物搭配</string>
+    <string name="wine_info_activity_cellaring_prefix">贮藏</string>
+    <string name="wine_info_activity_region_prefix">产区</string>
+    <string name="wine_info_activity_grape_varieties_prefix">葡萄种类</string>
+
+    <string name="winery_info_activity_view_more">阅读全文</string>
+    <string name="winery_info_activity_our_wines">我们的酒</string>
+    <string name="winery_info_website_link_text">访问官网</string>
+
+    <string name="write_rating_and_review_activity_title">添加评论</string>
+    <string name="write_rating_and_review_hint"><b>在这里写下您的评论</b>\n（最多500字）</string>
+    <string name="write_rating_and_review_submit_button">提交</string>
+    <string name="write_rating_and_review_content_limit">1000\//1000</string>
+
+    <string name="my_bottles_activity_title">我的酒窖</string>
+    <string name="my_bottles_activity_opened_bottle_text">开过的酒</string>
+    <string name="my_bottles_activity_rated_text">评分过的酒</string>
+    <string name="my_bottles_activity_wish_list_text">想喝的酒</string>
+    <string name="my_bottles_activity_scanned_text">扫过的酒</string>
+    <string name="my_bottles_activity_repurchase_button_text">再次购买</string>
+
+    <string name="news_feed_activity_title">发现</string>
+
+    <string name="qrscanner_activity_title">扫描二维码确认</string>
+    <string name="qrscanner_activity_hint">请揭开NFC标签，并扫描其背面的二维码！</string>
+    <string name="qrscanner_activity_check_steps_btn_text">点击这里查看怎样扫二维码</string>
+    <string name="qrscanner_activity_camera_request">您需要授权葡萄藤使用您的摄像头来扫描二维码！</string>
+
+    <string name="user_profile_my_profile_activity_title">个人主页</string>
+    <string name="user_profile_other_profile_activity_title">用户信息</string>
+    <string name="user_profile_edit">修改</string>
+    <string name="user_profile_summary_text">简介</string>
+    <string name="user_profile_wishlist_text">心愿单</string>
+    <string name="user_profile_following_text">关注</string>
+    <string name="user_profile_follower_text">粉丝</string>
+    <string name="user_profile_rating_text">评分</string>
+    <string name="user_profile_name">姓名： </string>
+    <string name="user_profile_user_email">邮箱： </string>
+    <string name="user_profile_user_gender">性别： </string>
+    <string name="user_profile_user_dob">出生日期： </string>
+    <string name="user_profile_user_points">奖励积分： </string>
+    <string name="user_profile_upload_photo">&#xf030;</string>
+
+    <string name="friend_list_activity_title">搜索好友</string>
+    <string name="friend_search_hint">&#xf002; 搜寻</string>
+
+    <string name="reward_program_add_reward_points_response_already_earned">您已经获得过此奖励！</string>
+    <string name="reward_program_add_reward_points_response_success_prefix">您刚刚获得了</string>
+    <string name="reward_program_add_reward_points_response_success_suffix">积分。</string>
+
+    <string name="upload_photo_activity_select_button">选择照片</string>
+    <string name="upload_photo_activity_upload_button">上传照片</string>
+    <string name="upload_photo_activity_uploading">上传中…</string>
+    <string name="upload_photo_activity_waiting">请稍候…</string>
+    <string name="upload_photo_activity_please_select_a_photo">请选择一张头像上传</string>
+
+    <string name="share_dialog_activity_wechat_friends">好友</string>
+    <string name="share_dialog_activity_wechat_moments">朋友圈</string>
+    <string name="share_dialog_activity_others">其它</string>
+    <string name="share_dialog_activity_title">分享到</string>
+
+    <string name="redeem_points_activity_points">积分：</string>
+    <string name="redeem_points_activity_out_of_stock">暂时缺货</string>
+    <string name="redeem_points_activity_submit">提交</string>
+    <string name="redeem_points_activity_hint">请选择您想兑换的奖品：</string>
+    <string name="redeem_points_activity_quantity">数量：</string>
+    <string name="redeem_points_activity_current_points_text_prefix">您目前在</string>
+    <string name="redeem_points_activity_current_points_text_postfix">的积分为：</string>
+    <string name="redeem_points_activity_warning_enter_number">请输入您想要兑换的数量！</string>
+    <string name="redeem_points_activity_warning_points_exceed">要兑换的积分超出您现有的积分！请重新选择！</string>
+    <string name="redeem_points_activity_total_cost_prefix">总计：</string>
+    <string name="redeem_points_activity_balance_prefix">余额：</string>
+
+    <string name="redeem_submit_activity_hint">请完整填写下表，然后点击提交</string>
+    <string name="redeem_submit_activity_fullname_hint">全名</string>
+    <string name="redeem_submit_activity_street_hint">街道地址、公寓名称、楼号、门牌号等等</string>
+    <string name="redeem_submit_activity_city_hint">城市</string>
+    <string name="redeem_submit_activity_province_hint">省、直辖市、自治区</string>
+    <string name="redeem_submit_activity_country_hint">国家或地区</string>
+    <string name="redeem_submit_activity_zipcode_hint">邮编</string>
+    <string name="redeem_submit_activity_phone_number_hint">电话号码</string>
+    <string name="redeem_submit_activity_email_hint">电子邮箱（选填）</string>
+    <string name="redeem_submit_activity_submit_button">提交</string>
+    <string name="redeem_submit_activity_incomplete_info">请填写全部必需的信息！</string>
+    <string name="redeem_submit_activity_submit_success">提交成功！\n物品寄出我们会邮件通知您</string>
+    <string name="redeem_submit_activity_submit_failed_bad_network">Bad Network!</string>
+    <string name="redeem_submit_activity_submit_failed">Submitted failed!</string>
+
+    <string name="user_name_no_empty">用户名不能为空！</string>
+    <string name="password_no_empty">密码不能为空！</string>
+    <string name="email_no_empty">邮箱不能为空！</string>
+    <string name="reenter_password">请再次输入您的密码！</string>
+    <string name="password_not_match">您两次输入的密码不一致</string>
+    <string name="login_failed">登录失败！\n请检查您的用户名和密码是否正确。</string>
+    <string name="user_name_exists">用户名已经存在</string>
+    <string name="email_exists">邮箱已经存在</string>
+    <string name="invalid_signup_input">无效的注册信息</string>
+    <string name="pw_reset_email_sent">重置密码的邮件已发送至您的邮箱</string>
+    <string name="email_not_exists">没有和这个邮箱关联的账户信息。请检查您的输入。</string>
+    <string name="sent_activation_email_success_title">邮件已寄出</string>
+    <string name="sent_activation_email_success_notice">我们已寄出激活信件，请至您的注册邮件信箱收信，并激活此帐号。</string>
+    <string name="signup_success_notice">注册成功！\n我们已寄出激活信件，请至您的注册邮件信箱收信，并激活此帐号。</string>
+    <string name="rating_no_zero">最低评分是0.5分</string>
+    <string name="review_less_than_ten_chars">内容不少于10个字</string>
+    <string name="rating_review_write_fail">提交失败，请重试。</string>
+    <string name="rating_review_write_success">发布成功！</string>
+
+    <string name="title_activity_authentication">AuthenticationActivity</string>
+    <string name="title_activity_wine_info">WineInfoActivity</string>
+    <string name="wine_info_menu_search_wine">查找酒</string>
+    <string name="wine_info_menu_find_friend">搜索好友</string>
+    <string name="wine_info_menu_help_desk">服务台</string>
+    <string name="wine_info_menu_groups">朋友圈</string>
+    <string name="wine_info_menu_log_out">退出登录</string>
+    <string name="wine_info_menu_my_profile">我的资料</string>
+    <string name="title_activity_write_rating_and_review">WriteRatingAndReview</string>
+    <string name="title_activity_sign_up_success">SignUpSuccess</string>
+    <string name="title_activity_news_feed">NewsFeedActivity</string>
+    <string name="title_activity_my_bottles">MyBottlesActivity</string>
+    <string name="title_activity_add_to_my_bottles">AddToMyBottlesActivity</string>
+    <string name="title_activity_news_feed_web_view">NewsFeedWebViewActivity</string>
+    <string name="title_activity_qrscanner">QRScanner</string>
+    <string name="title_activity_winery_info">WineryInfoActivity</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <string name="title_activity_winery_info_detail_web_view">WineryInfoDetailWebViewActivity</string>
+    <string name="title_activity_help_desk">HelpDesk</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="help_desk_activity_title">联络我们</string>
+    <string name="help_desk_activity_contact_name_hint">您的名字</string>
+    <string name="help_desk_activity_contact_email_hint">您的Email</string>
+    <string name="help_desk_activity_contact_phone_hint">您的电话</string>
+    <string name="help_desk_activity_contact_message_hint">请告诉我们您的问题</string>
+    <string name="help_desk_activity_submit_button_text">联络我们</string>
+    <string name="settings_activity_title">设置</string>
+    <string name="settings_activity_private_account">对陌生人隐藏个人页面</string>
+    <string name="update_privacy_setting_failed_text">更新失败。请稍后再试。</string>
+    <string name="wechat_share_title">我刚刚用葡萄藤找到了一瓶好酒！</string>
+    <string name="added_to_wishlist_text">已加入愿望清单！</string>
+    <string name="failed_to_add_to_wishlist_text">服务器错误：无法加入愿望清单！</string>
+    <string name="removed_from_wishlist_text">已从愿望清单中移除！</string>
+    <string name="failed_to_remove_from_wishlist_text">很抱歉，因系统错误造成失败，请稍候再试</string>
+    <string name="wishlist_remove_alert_title">移除</string>
+    <string name="wishlist_remove_alert_message">您确定要从愿望清单中移除这瓶酒吗?</string>
+    <string name="wishlist_remove_alert_confirm">确定</string>
+    <string name="wishlist_remove_alert_cancel">取消</string>
+    <string name="tagtalk_email">support@tagtalk.co</string>
+    <string name="title_activity_friend_list">FriendListActivity</string>
+    <string name="title_activity_upload_photo">上传头像</string>
+
+    <string name="dialog_title_sending_email">寄送信件中</string>
+    <string name="dialog_text_be_patient">请稍候</string>
+    <string name="title_activity_redeem_points">兑换积分</string>
+
+    <string name="failed_to_get_remote_data">很抱歉，由于网路或服务器问题，暂时无法取得用户资料。</string>
+    <string name="failed_to_do_operation">很抱歉，由于网路或服务器问题，造成操作失敗。</string>
+
+    <string name="location_permission_request_alert_title">位置信息获取请求</string>
+    <string name="location_permission_request_alert_message">葡萄藤需要获取您的位置信息以继续使用！</string>
+    <string name="permission_request_alert_confirm">好的</string>
+    <string name="permission_request_alert_cancel">退出葡萄藤</string>
+
+    <!-- New UI FLow -->
+    <!-- Header Bar -->
+    <string name="nfc_authentication_btn_desc">NFC防伪验证</string>
+    <string name="find_btn_desc">发现</string>
+    <string name="my_bottles_btn_desc">我的酒窖</string>
+    <!-- Nav Drawer -->
+    <string name="nav_drawer_my_profile">个人主页</string>
+    <string name="nav_drawer_friends">搜索好友</string>
+    <string name="nav_drawer_all_bottles">浏览所有酒</string>
+    <string name="nav_drawer_wines">我的酒</string>
+    <string name="nav_drawer_contact_us">联络我们</string>
+    <string name="nav_drawer_settings">设置</string>
+    <string name="nav_drawer_logout">登出</string>
+    <string name="nav_drawer_quick_link_title">首页</string>
+    <string name="logout_confirm_title">登出</string>
+    <string name="logout_confirm_msg">您确定要离开葡萄藤吗?</string>
+    <string name="login_with_wechat">微信登录</string>
+    <string name='navigation_drawer_open'>打开</string>
+    <string name='navigation_drawer_close'>收起</string>
+    <!-- NFC Authentication Page -->
+    <string name="intro_nfc_authentication_activity_title">NFC防伪验证</string>
+    <string name="title_activity_intro_nfc_authentication">NFC防伪验证</string>
+    <string name="intro_nfc_authentication_allow_title">请开启NFC</string>
+    <string name="intro_nfc_authentication_allow_msg">为了使用葡萄藤的NFC防伪验证，请至「设置」页面开启NFC功能。</string>
+    <string name="intro_nfc_authentication_no_nfc_title">无NFC功能</string>
+    <string name="intro_nfc_authentication_no_nfc_msg">很抱歉，您的手机并没有NFC功能。为了使用葡萄藤的NFC防伪验证，您需要一个具有NFC功能的手机。</string>
+    <string name="intro_nfc_authentication_desc_turn_on_nfc_btn">打开NFC</string>
+    <string name="intro_nfc_no_nfc_desc">很抱歉，您的手机并无NFC功能，故无法使用 NFC 防伪验证功能。您仍能使用葡萄藤其他功能。</string>
+    <string name="intro_nfc_touch_nfc_desc">将手机背部对准酒瓶上NFC芯片</string>
+    <string name="intro_nfc_turn_on_nfc_desc">打开设置里的NFC功能</string>
+    <string name="intro_nfc_turn_on_nfc_btn_text">打开NFC</string>
+    <!-- Discovery Page -->
+    <string name="news_feed_click_to_see">进去看看</string>
+    <!-- My Bottles Page -->
+    <string name="my_bottles_fragment_redeem_points_btn_text"><u>兑换礼品</u></string>
+    <string name="my_bottles_fragment_redeem_points_text">&#160;分</string>
+    <string name="my_bottles_fragment_opened_title">开过的酒</string>
+    <string name="my_bottles_fragment_scanned_title">验过的酒</string>
+    <string name="my_bottles_fragment_rated_title">评过的酒</string>
+    <!-- Bottle Single Item -->
+    <string name="my_bottles_single_item_my_rate">我的积分:</string>
+    <!-- Location Warning Page -->
+    <string name="location_warning_activity_title">开启位置信息</string>
+    <string name="location_warning_text_begin">没有位置授权无法验证葡萄酒真实性。</string>
+    <string name="location_warning_text_end">可以浏览使用我们防伪技术的酒款。</string>
+    <!-- Welcome Activity -->
+    <string name="welcome_page_nfc_auth_title">NFC 防伪验酒\n查看酒瓶密封状态</string>
+    <string name="welcome_page_open_bottle_title">记录已开酒瓶\n获积分,换更多好酒</string>
+    <string name="welcome_page_more_features_title">对话酒庄庄主\n挑酒、侍酒、懂酒不再难</string>
+    <string name="welcome_page_sign_up">注册</string>
+    <string name="welcome_page_forgot_password">忘记密码？</string>
+    <string name="welcome_page_login">登录</string>
+    <string name="welcom_page_wechat_login_text">微信一键登录</string>
+    <!-- Login Activity -->
+    <string name="login_activity_app_name">葡萄藤</string>
+    <string name="login_activity_or">或</string>
+    <string name="login_activity_title">登录</string>
+    <string name="login_activity_username_hint">用户名</string>
+    <string name="login_activity_password_hint">密码</string>
+    <string name="login_activity_login_button_text">登录</string>
+    <string name="login_activity_signup_button_text">创建账号</string>
+    <string name="login_activity_forgot_button_text">忘记密码？</string>
+    <string name="login_activity_wechat_signin_hit">微信一键登录</string>
+    <string name="login_activity_send_me_activate_email_title">帐号尚未激活</string>
+    <string name="login_activity_send_me_activate_email_msg">让我们重新发送激活邮件给您，您将能在邮件中激活帐号。</string>
+    <string name="login_activity_send_me_activate_email_btn">发邮件给我</string>
+    <string name="login_activity_send_activate_email_failed">很抱歉，由于未知错误，我们无法寄送激活邮件给您。</string>
+    <!-- Signup Activity -->
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="signup_activity_title">注册</string>
+    <string name="signup_activity_username_hint">用户名</string>
+    <string name="signup_activity_email_hint">邮箱</string>
+    <string name="signup_activity_password_hint">密码</string>
+    <string name="signup_activity_password_reenter_hint">请确认您的密码</string>
+    <string name="signup_activity_signup_button_text">注册</string>
+    <string name="signup_activity_login_text_prefix">已经是会员？</string>
+    <string name="signup_activity_login_text">点击登录</string>
+    <string name="signup_activity_success_alert_positive_button_text">确定</string>
+    <string name="signup_activity_success_alert_title">注册</string>
+    <string name="signup_activity_success_alert_message">注册成功！</string>
+    <string name="title_activity_location_warning">允许获取位置信息</string>
+    <!-- QR Scan Activity -->
+    <string name="msg_already_earned">很抱歉，您已取得过此点数。</string>
+    <string name="msg_failed_to_add_bottle">扫描失败。请确认这是有效的葡萄藤QR Code，並重新扫描。</string>
+    <string name="msg_failed_to_add_points">扫描失败。请确认此为有效的葡萄藤QR Code，並重新扫描。</string>
+    <string name="msg_failed_to_scan_server_error">很抱歉，因服务器错误造成扫描失败，请您稍后再试。</string>
+    <string name="msg_add_point_succeed_prefix">您得到了</string>
+    <string name="msg_add_point_succeed_suffix">点积分，并已添加至您的帐号。</string>
+    <!-- QR Scan Desc Activity -->
+    <string name="title_activity_qrscan_desc">扫描二维码确认</string>
+    <string name="qrscan_desc_hint">我们需要您扫描NFC芯片下面的二维码确认开瓶。</string>
+    <string name="qrscan_desc_caution">非该酒拥有者不得随意揭开NFC芯片标签，违者必究！</string>
+    <string name="title_activity_main">首页</string>
+    <string name="title_activity_all_bottles">浏览所有酒</string>
+    <!-- User Profile Activity -->
+    <string name="wishlist_item_delete_btn">&#xf014;</string>
+</resources>

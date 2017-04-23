@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/nav_drawer_quick_link_title">
+        <menu>
+            <item
+                android:id="@+id/nav_intro_nfc_authentication"
+                android:icon="@drawable/tab_auth_trans_shadow"
+                android:checkable="true"
+                android:title="@string/nfc_authentication_btn_desc"/>
+            <item
+                android:id="@+id/nav_news_feed"
+                android:icon="@drawable/tab_find_trans_shadow"
+                android:checkable="true"
+                android:title="@string/find_btn_desc" />
+            <item
+                android:id="@+id/nav_my_bottles"
+                android:icon="@drawable/tab_wine_trans_shadow"
+                android:checkable="true"
+                android:title="@string/my_bottles_btn_desc"/>
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/user_icon_man"
+            android:title="@string/nav_drawer_my_profile" />
+
+        <item
+            android:id="@+id/nav_all_bottles"
+            android:icon="@drawable/wine_bottle"
+            android:title="@string/nav_drawer_all_bottles" />
+
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/ic_group_white_48dp"
+            android:title="@string/nav_drawer_friends" />
+
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_feedback_black_24dp"
+            android:title="@string/nav_drawer_contact_us" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/nav_drawer_settings" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_keyboard_return_black_24dp"
+            android:checkable="false"
+            android:title="@string/nav_drawer_logout" />
+    </group>
+</menu>

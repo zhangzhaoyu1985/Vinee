@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.tagtalk.winemate.WriteRatingAndReviewActivity"
+    tools:showIn="@layout/activity_write_rating_and_review">
+
+    <ImageView
+        android:id="@+id/write_rating_and_review_user_icon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/user_icon_man"/>
+
+    <TextView
+        android:id="@+id/write_rating_and_review_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/write_rating_and_review_user_icon"
+        android:layout_alignTop="@+id/write_rating_and_review_user_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/write_rating_and_review_user_icon"
+        android:layout_toRightOf="@+id/write_rating_and_review_user_icon"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="zhaoyuzhang"/>
+
+    <RatingBar
+        android:id="@+id/write_rating_and_review_rating_bar"
+        style="?android:attr/ratingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/write_rating_and_review_user_name"
+        android:layout_alignStart="@+id/write_rating_and_review_user_name"
+        android:layout_below="@+id/write_rating_and_review_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginStart="-5dp"
+        android:backgroundTint="@color/rating_bar_background"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressTint="@color/rating_bar_progress"
+        android:stepSize="0.5"/>
+
+    <View
+        android:id="@+id/write_rating_and_review_divider"
+        style="@style/Horizontal_Divider_Thin"
+        android:layout_below="@+id/write_rating_and_review_rating_bar"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/write_rating_and_review_review_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/write_rating_and_review_divider"
+        android:layout_above="@+id/write_rating_and_review_submit_button"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="@string/write_rating_and_review_hint"
+        android:inputType="textAutoCorrect"
+        android:maxLength="1000"/>
+
+    <!--
+    <TextView
+        android:id="@+id/write_rating_and_review_review_char_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/write_rating_and_review_review_content"
+        android:layout_alignRight="@+id/write_rating_and_review_review_content"
+        android:layout_below="@id/write_rating_and_review_review_content"
+        android:text="@string/write_rating_and_review_content_limit"/>
+    -->
+
+    <Button
+        android:id="@+id/write_rating_and_review_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:background="@drawable/rectangle_button_green_brighter"
+        android:gravity="center"
+        android:text="@string/write_rating_and_review_submit_button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="14sp"/>
+
+
+</RelativeLayout>
